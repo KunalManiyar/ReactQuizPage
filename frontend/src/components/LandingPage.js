@@ -1,5 +1,6 @@
 import React, { Fragment } from "react";
 import { useState } from "react";
+import FaceIcon from "@material-ui/icons/Face";
 import "./LandingPage.css";
 const LandingPage = () => {
   const [name, setName] = useState();
@@ -11,7 +12,8 @@ const LandingPage = () => {
           <h2 className="enterNameHeading">Enter Name</h2>
 
           <form className="enterNameForm">
-            <div className="forgotPasswordEmail">
+            <div>
+              <FaceIcon />
               <input
                 type="text"
                 placeholder="Enter Name Here..."
@@ -22,7 +24,7 @@ const LandingPage = () => {
               />
             </div>
 
-            <input type="submit" value="Send" className="forgotPasswordBtn" />
+            <input type="submit" value="Submit" className="enterNameBtn" />
           </form>
         </div>
       </div>
