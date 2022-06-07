@@ -1,14 +1,14 @@
 import React, { Fragment } from "react";
-import { useEffect } from "react";
+
 import { useParams } from "react-router-dom";
-import $ from "jquery";
+
 const Result = () => {
   const { score } = useParams();
   console.log(score);
 
   return (
     <Fragment>
-      <div id="myModal" className="modal fade" style={{ display: "block" }}>
+      <div id="myModal" className="modal fade">
         <div className="modal-dialog">
           <div className="modal-content">
             <div className="modal-header">

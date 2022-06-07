@@ -1,1 +1,1 @@
-console.log(typeof new Date().getTime());
+console.log(new Date().getTime());
